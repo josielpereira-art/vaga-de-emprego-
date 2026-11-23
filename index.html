@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carreiras FedEx Brasil | Vaga de Entregador / Motorista de Entrega</title>
+    <!-- Carregamento do Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fonte Inter do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Ícones Lucide via CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Configuração personalizada do Tailwind com as cores oficiais da marca -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        fedex: {
+                            purple: '#4D148C',
+                            purpleDark: '#380E68',
+                            purpleLight: '#F3EBF9',
+                            orange: '#FF6600',
+                            orangeHover: '#E65C00',
+                            orangeLight: '#FFF0E6',
+                            grayBg: '#F8F9FA'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-fedex-grayBg text-slate-800 antialiased selection:bg-fedex-orange selection:text-white">
+
+    <!-- ==================== CABEÇALHO / NAVBAR ==================== -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo Estilizado FedEx -->
+            <a href="#" class="flex items-center group focus:outline-none" aria-label="Início Carreiras FedEx">
+                <span class="text-3xl sm:text-4xl font-black tracking-tighter select-none">
+                    <span class="text-fedex-purple">Fed</span><span class="text-fedex-orange">Ex</span>
+                </span>
+                <span class="ml-3 pl-3 border-l-2 border-slate-200 text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-500">
+                    Carreiras Brasil
+                </span>
+            </a>
+
+            <!-- Links de Navegação Desktop -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-600">
+                <a href="#sobre" class="hover:text-fedex-purple transition-colors">Sobre a Vaga</a>
+                <a href="#requisitos" class="hover:text-fedex-purple transition-colors">Requisitos</a>
+                <a href="#beneficios" class="hover:text-fedex-purple transition-colors">Benefícios</a>
+            </nav>
+
+            <!-- Botão de Candidatura Rápida -->
+            <div>
+                <a href="#candidatura" 
+                   class="inline-flex items-center justify-center px-5 py-2.5 sm:px-6 sm:py-3 rounded-xl bg-fedex-orange hover:bg-fedex-orangeHover text-white font-bold text-sm shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200">
+                    <span>Candidatar-se</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== SEÇÃO HERO ==================== -->
+    <section class="relative overflow-hidden bg-gradient-to-br from-fedex-purple via-fedex-purple to-fedex-purpleDark text-white py-16 sm:py-24 lg:py-28">
+        <!-- Elementos decorativos sutis de fundo -->
+        <div class="absolute top-0 right-0 -mt-20 -mr-20 w-96 h-96 rounded-full bg-white/5 blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 rounded-full bg-fedex-orange/20 blur-3xl pointer-events-none"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Conteúdo Principal do Hero -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <!-- Badge de Destaque -->
+                    <div class="inline-flex items-center space-x-2 bg-white/10 border border-white/20 backdrop-blur-sm px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold text-orange-200">
+                        <span class="w-2 h-2 rounded-full bg-fedex-orange animate-pulse"></span>
+                        <span>Contratação Imediata • Regime CLT</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Seja um Entregador <span class="text-fedex-orange">FedEx</span> – Conectando o Brasil ao Mundo
+                    </h1>
+
+                    <p class="text-base sm:text-xl text-purple-100 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Faça parte da maior rede de transporte expresso do planeta. Entregue mais do que pacotes: leve confiança, agilidade e excelência a milhares de clientes todos os dias.
+                    </p>
+
+                    <!-- Metadados da Vaga (Localidade e Modelo) -->
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2 text-sm text-purple-100">
+                        <div class="flex items-center bg-white/10 px-3.5 py-2 rounded-lg">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-fedex-orange mr-2"></i>
+                            <span>São Paulo e Região / Bases no Brasil</span>
+                        </div>
+                        <div class="flex items-center bg-white/10 px-3.5 py-2 rounded-lg">
+                            <i data-lucide="truck" class="w-4 h-4 text-fedex-orange mr-2"></i>
+                            <span>Frota Própria & Tecnologia Embarcada</span>
+                        </div>
+                    </div>
+
+                    <!-- Botões de Ação -->
+                    <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#candidatura" 
+                           class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-xl bg-fedex-orange hover:bg-fedex-orangeHover text-white font-extrabold text-base shadow-xl hover:shadow-orange-500/30 transform hover:-translate-y-0.5 transition-all duration-200">
+                            <span>Quero me Candidatar Agora</span>
+                            <i data-lucide="chevron-right" class="w-5 h-5 ml-2"></i>
+                        </a>
+                        <a href="#sobre" 
+                           class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-4 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold text-base border border-white/20 transition-all">
+                            Conhecer Detalhes da Vaga
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card Resumo Lateral no Hero -->
+                <div class="lg:col-span-5">
+                    <div class="bg-white text-slate-800 rounded-2xl p-6 sm:p-8 shadow-2xl border border-purple-100">
+                        <div class="flex items-center justify-between border-b border-slate-100 pb-4 mb-6">
+                            <div>
+                                <span class="text-xs font-bold uppercase tracking-wider text-fedex-orange">Resumo da Oportunidade</span>
+                                <h2 class="text-xl font-bold text-fedex-purple mt-0.5">Motorista Entregador (Courier)</h2>
+                            </div>
+                            <div class="w-12 h-12 rounded-xl bg-fedex-purpleLight flex items-center justify-center text-fedex-purple">
+                                <i data-lucide="package-check" class="w-6 h-6"></i>
+                            </div>
+                        </div>
+
+                        <ul class="space-y-4 text-sm">
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-fedex-orange mr-3 shrink-0 mt-0.5"></i>
+                                <div>
+                                    <span class="font-bold text-slate-900 block">Contrato Efetivo (CLT)</span>
+                                    <span class="text-slate-500">Estabilidade e registro em carteira desde o 1º dia</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-fedex-orange mr-3 shrink-0 mt-0.5"></i>
+                                <div>
+                                    <span class="font-bold text-slate-900 block">CNH Categoria B ou Superior</span>
+                                    <span class="text-slate-500">Obrigatório possuir observação EAR ativa</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-fedex-orange mr-3 shrink-0 mt-0.5"></i>
+                                <div>
+                                    <span class="font-bold text-slate-900 block">Treinamento Remunerado</span>
+                                    <span class="text-slate-500">Capacitação completa em direção defensiva e sistemas</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-fedex-orange mr-3 shrink-0 mt-0.5"></i>
+                                <div>
+                                    <span class="font-bold text-slate-900 block">Pacote Completo de Benefícios</span>
+                                    <span class="text-slate-500">Assistência médica, odontológica, VR/VA e mais</span>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="mt-6 pt-5 border-t border-slate-100 text-center">
+                            <p class="text-xs text-slate-400">Processo seletivo 100% digital • Resposta rápida</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SEÇÃO: SOBRE A VAGA ==================== -->
+    <section id="sobre" class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-14">
+                <span class="text-fedex-orange font-bold text-sm uppercase tracking-wider">O Dia a Dia na Operação</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-fedex-purple mt-2">Sobre a Vaga</h2>
+                <p class="mt-4 text-slate-600 text-base sm:text-lg">
+                    Como Motorista de Entrega da FedEx, você será o rosto da nossa marca nas ruas, garantindo que cada remessa chegue ao destino com segurança e pontualidade.
+                </p>
+            </div>
+
+            <!-- Grid de Atividades Diárias -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+                <!-- Atividade 1 -->
+                <div class="bg-fedex-grayBg rounded-2xl p-6 border border-slate-200/70 hover:border-fedex-purple/30 hover:shadow-lg transition-all duration-200">
+                    <div class="w-12 h-12 rounded-xl bg-fedex-purple text-white flex items-center justify-center mb-5 shadow-md">
+                        <i data-lucide="truck" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Coleta e Entrega</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Realizar coletas e entregas de encomendas expressas e cargas fracionadas dentro das rotas estabelecidas com segurança e agilidade.
+                    </p>
+                </div>
+
+                <!-- Atividade 2 -->
+                <div class="bg-fedex-grayBg rounded-2xl p-6 border border-slate-200/70 hover:border-fedex-purple/30 hover:shadow-lg transition-all duration-200">
+                    <div class="w-12 h-12 rounded-xl bg-fedex-orange text-white flex items-center justify-center mb-5 shadow-md">
+                        <i data-lucide="scan-barcode" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Conferência de Pacotes</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Efetuar a leitura de códigos de barras, conferir integridade das embalagens e realizar o carregamento organizado do veículo.
+                    </p>
+                </div>
+
+                <!-- Atividade 3 -->
+                <div class="bg-fedex-grayBg rounded-2xl p-6 border border-slate-200/70 hover:border-fedex-purple/30 hover:shadow-lg transition-all duration-200">
+                    <div class="w-12 h-12 rounded-xl bg-fedex-purple text-white flex items-center justify-center mb-5 shadow-md">
+                        <i data-lucide="smile" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Atendimento Cordial</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Manter uma postura profissional, empática e cordial com clientes corporativos e residenciais no momento da entrega ou coleta.
+                    </p>
+                </div>
+
+                <!-- Atividade 4 -->
+                <div class="bg-fedex-grayBg rounded-2xl p-6 border border-slate-200/70 hover:border-fedex-purple/30 hover:shadow-lg transition-all duration-200">
+                    <div class="w-12 h-12 rounded-xl bg-fedex-orange text-white flex items-center justify-center mb-5 shadow-md">
+                        <i data-lucide="navigation" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">App de Roteirização</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Utilizar coletor de dados e aplicativo corporativo de roteirização para baixa em tempo real, assinatura digital e otimização de trajetos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SEÇÃO: REQUISITOS ==================== -->
+    <section id="requisitos" class="py-16 sm:py-24 bg-fedex-grayBg border-y border-slate-200/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Coluna Esquerda: Título e Destaque -->
+                <div class="lg:col-span-5 space-y-5">
+                    <span class="text-fedex-orange font-bold text-sm uppercase tracking-wider">Perfil Buscado</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-fedex-purple">Requisitos para a Vaga</h2>
+                    <p class="text-slate-600 text-base leading-relaxed">
+                        Valorizamos profissionais comprometidos com a segurança no trânsito e apaixonados por oferecer um excelente atendimento ao cliente. Confira o que você precisa para participar:
+                    </p>
+                    <div class="p-5 rounded-2xl bg-fedex-purpleLight border border-fedex-purple/20">
+                        <div class="flex items-start space-x-3">
+                            <i data-lucide="shield-alert" class="w-6 h-6 text-fedex-purple shrink-0 mt-0.5"></i>
+                            <p class="text-sm text-fedex-purple font-medium">
+                                <strong>Importante:</strong> A observação <strong>EAR (Exerce Atividade Remunerada)</strong> na CNH é um requisito legal obrigatório para atuação profissional no transporte de cargas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coluna Direita: Lista de Requisitos -->
+                <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    <!-- Requisito 1 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/70 flex items-start space-x-4">
+                        <div class="w-10 h-10 rounded-xl bg-fedex-orangeLight text-fedex-orange flex items-center justify-center shrink-0">
+                            <i data-lucide="credit-card" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-900">CNH Categoria B ou Superior</h3>
+                            <p class="text-sm text-slate-600 mt-1">Documento ativo, dentro da validade e com a inclusão obrigatória de <strong>EAR</strong>.</p>
+                        </div>
+                    </div>
+
+                    <!-- Requisito 2 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/70 flex items-start space-x-4">
+                        <div class="w-10 h-10 rounded-xl bg-fedex-purpleLight text-fedex-purple flex items-center justify-center shrink-0">
+                            <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-900">Ensino Médio Completo</h3>
+                            <p class="text-sm text-slate-600 mt-1">Formação escolar concluída (comprovante será solicitado na etapa de admissão).</p>
+                        </div>
+                    </div>
+
+                    <!-- Requisito 3 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/70 flex items-start space-x-4">
+                        <div class="w-10 h-10 rounded-xl bg-fedex-purpleLight text-fedex-purple flex items-center justify-center shrink-0">
+                            <i data-lucide="smartphone" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-900">Tecnologia e GPS</h3>
+                            <p class="text-sm text-slate-600 mt-1">Conhecimento básico no uso de smartphones, aplicativos de navegação (Waze/Maps) e coletores.</p>
+                        </div>
+                    </div>
+
+                    <!-- Requisito 4 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/70 flex items-start space-x-4">
+                        <div class="w-10 h-10 rounded-xl bg-fedex-orangeLight text-fedex-orange flex items-center justify-center shrink-0">
+                            <i data-lucide="clock" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-900">Comprometimento e Pontualidade</h3>
+                            <p class="text-sm text-slate-600 mt-1">Senso de responsabilidade, organização e respeito rigoroso às leis de trânsito.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SEÇÃO: BENEFÍCIOS ==================== -->
+    <section id="beneficios" class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-14">
+                <span class="text-fedex-orange font-bold text-sm uppercase tracking-wider">Cuidamos de Quem Move o Mundo</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-fedex-purple mt-2">Benefícios e Vantagens</h2>
+                <p class="mt-4 text-slate-600 text-base sm:text-lg">
+                    Na FedEx, investimos no bem-estar, na segurança e no crescimento profissional de cada colaborador da nossa equipe.
+                </p>
+            </div>
+
+            <!-- Cards de Benefícios -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                <!-- Benefício 1 -->
+                <div class="group p-7 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-xl hover:border-fedex-orange/40 transition-all duration-200">
+                    <div class="w-14 h-14 rounded-2xl bg-fedex-orangeLight text-fedex-orange group-hover:bg-fedex-orange group-hover:text-white flex items-center justify-center mb-5 transition-colors">
+                        <i data-lucide="banknote" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Salário Competitivo</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Remuneração fixa compatível com o mercado logístico + adicionais previstos em convenção e pagamento rigorosamente em dia.
+                    </p>
+                </div>
+
+                <!-- Benefício 2 -->
+                <div class="group p-7 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-xl hover:border-fedex-purple/40 transition-all duration-200">
+                    <div class="w-14 h-14 rounded-2xl bg-fedex-purpleLight text-fedex-purple group-hover:bg-fedex-purple group-hover:text-white flex items-center justify-center mb-5 transition-colors">
+                        <i data-lucide="utensils" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Vale-Refeição e Alimentação</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Cartão benefício flexível para suas refeições diárias durante a rota e compras em supermercados para sua família.
+                    </p>
+                </div>
+
+                <!-- Benefício 3 -->
+                <div class="group p-7 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-xl hover:border-fedex-orange/40 transition-all duration-200">
+                    <div class="w-14 h-14 rounded-2xl bg-fedex-orangeLight text-fedex-orange group-hover:bg-fedex-orange group-hover:text-white flex items-center justify-center mb-5 transition-colors">
+                        <i data-lucide="heart-pulse" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Plano de Saúde e Odontológico</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Assistência médica e odontológica de abrangência nacional com possibilidade de inclusão de dependentes legais.
+                    </p>
+                </div>
+
+                <!-- Benefício 4 -->
+                <div class="group p-7 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-xl hover:border-fedex-purple/40 transition-all duration-200">
+                    <div class="w-14 h-14 rounded-2xl bg-fedex-purpleLight text-fedex-purple group-hover:bg-fedex-purple group-hover:text-white flex items-center justify-center mb-5 transition-colors">
+                        <i data-lucide="shield-check" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Seguro de Vida</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Cobertura completa de seguro de vida em grupo custeada pela empresa, oferecendo tranquilidade para você e sua família.
+                    </p>
+                </div>
+
+                <!-- Benefício 5 -->
+                <div class="group p-7 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-xl hover:border-fedex-orange/40 transition-all duration-200">
+                    <div class="w-14 h-14 rounded-2xl bg-fedex-orangeLight text-fedex-orange group-hover:bg-fedex-orange group-hover:text-white flex items-center justify-center mb-5 transition-colors">
+                        <i data-lucide="award" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Treinamento Remunerado</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Programa completo de integração, direção defensiva e operação de sistemas antes mesmo de assumir sua rota solo.
+                    </p>
+                </div>
+
+                <!-- Benefício 6 -->
+                <div class="group p-7 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-xl hover:border-fedex-purple/40 transition-all duration-200">
+                    <div class="w-14 h-14 rounded-2xl bg-fedex-purpleLight text-fedex-purple group-hover:bg-fedex-purple group-hover:text-white flex items-center justify-center mb-5 transition-colors">
+                        <i data-lucide="trending-up" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Plano de Carreira</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Cultura de promoção interna ("Promote from Within") com oportunidades reais de crescimento para liderança e gestão operacional.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SEÇÃO: FORMULÁRIO DE CANDIDATURA ==================== -->
+    <section id="candidatura" class="py-16 sm:py-24 bg-gradient-to-b from-fedex-grayBg to-purple-50/60 border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl shadow-xl border border-slate-200/80 overflow-hidden">
+                <!-- Cabeçalho do Formulário -->
+                <div class="bg-fedex-purple px-6 py-8 sm:px-10 sm:py-10 text-white">
+                    <span class="inline-block px-3 py-1 rounded-full bg-fedex-orange text-xs font-bold uppercase tracking-wider mb-3">
+                        Inscrição Online
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold">Candidate-se à Vaga de Entregador</h2>
+                    <p class="text-purple-100 text-sm sm:text-base mt-2">
+                        Preencha seus dados abaixo com atenção. Nossa equipe de recrutamento entrará em contato para as próximas etapas.
+                    </p>
+                </div>
+
+                <!-- Corpo do Formulário -->
+                <div class="p-6 sm:p-10">
+                    <!-- Caixa de Feedback / Erro Geral (inicialmente oculta) -->
+                    <div id="form-alert" class="hidden mb-6 p-4 rounded-xl bg-red-50 border border-red-200 text-red-700 text-sm flex items-start space-x-3">
+                        <i data-lucide="alert-circle" class="w-5 h-5 text-red-600 shrink-0 mt-0.5"></i>
+                        <div id="form-alert-text">Por favor, verifique os campos destacados antes de enviar.</div>
+                    </div>
+
+                    <!-- Formulário Interativo -->
+                    <form id="application-form" novalidate class="space-y-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <!-- Nome Completo -->
+                            <div class="sm:col-span-2">
+                                <label for="nome" class="block text-sm font-bold text-slate-700 mb-1.5">
+                                    Nome Completo <span class="text-fedex-orange">*</span>
+                                </label>
+                                <input type="text" id="nome" name="nome" placeholder="Ex: Carlos Eduardo Silva" required
+                                       class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-fedex-purple focus:ring-2 focus:ring-fedex-purple/20 outline-none transition-all text-slate-800">
+                                <p class="error-msg hidden text-xs text-red-600 mt-1 font-medium">Informe seu nome completo (nome e sobrenome).</p>
+                            </div>
+
+                            <!-- E-mail -->
+                            <div>
+                                <label for="email" class="block text-sm font-bold text-slate-700 mb-1.5">
+                                    E-mail <span class="text-fedex-orange">*</span>
+                                </label>
+                                <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com.br" required
+                                       class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-fedex-purple focus:ring-2 focus:ring-fedex-purple/20 outline-none transition-all text-slate-800">
+                                <p class="error-msg hidden text-xs text-red-600 mt-1 font-medium">Digite um endereço de e-mail válido.</p>
+                            </div>
+
+                            <!-- Telefone / WhatsApp -->
+                            <div>
+                                <label for="telefone" class="block text-sm font-bold text-slate-700 mb-1.5">
+                                    Telefone / WhatsApp <span class="text-fedex-orange">*</span>
+                                </label>
+                                <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" maxlength="15" required
+                                       class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-fedex-purple focus:ring-2 focus:ring-fedex-purple/20 outline-none transition-all text-slate-800">
+                                <p class="error-msg hidden text-xs text-red-600 mt-1 font-medium">Informe um número de telefone com DDD.</p>
+                            </div>
+
+                            <!-- Cidade / Estado -->
+                            <div>
+                                <label for="cidade" class="block text-sm font-bold text-slate-700 mb-1.5">
+                                    Cidade / Estado <span class="text-fedex-orange">*</span>
+                                </label>
+                                <input type="text" id="cidade" name="cidade" placeholder="Ex: São Paulo / SP" required
+                                       class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-fedex-purple focus:ring-2 focus:ring-fedex-purple/20 outline-none transition-all text-slate-800">
+                                <p class="error-msg hidden text-xs text-red-600 mt-1 font-medium">Informe sua cidade e estado.</p>
+                            </div>
+
+                            <!-- Categoria da CNH -->
+                            <div>
+                                <label for="cnh" class="block text-sm font-bold text-slate-700 mb-1.5">
+                                    Categoria da CNH <span class="text-fedex-orange">*</span>
+                                </label>
+                                <select id="cnh" name="cnh" required
+                                        class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-fedex-purple focus:ring-2 focus:ring-fedex-purple/20 outline-none transition-all text-slate-800 bg-white">
+                                    <option value="">Selecione a categoria...</option>
+                                    <option value="B">Categoria B</option>
+                                    <option value="AB">Categoria AB</option>
+                                    <option value="C">Categoria C</option>
+                                    <option value="D">Categoria D</option>
+                                    <option value="E">Categoria E</option>
+                                    <option value="Apenas A / Sem CNH">Apenas Categoria A / Não possuo</option>
+                                </select>
+                                <p class="error-msg hidden text-xs text-red-600 mt-1 font-medium">Selecione a categoria da sua CNH.</p>
+                            </div>
+
+                            <!-- Possui EAR? -->
+                            <div class="sm:col-span-2">
+                                <span class="block text-sm font-bold text-slate-700 mb-2">
+                                    Sua CNH possui observação EAR (Exerce Atividade Remunerada)? <span class="text-fedex-orange">*</span>
+                                </span>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                    <label class="flex items-center p-3.5 rounded-xl border border-slate-300 cursor-pointer hover:bg-fedex-purpleLight/40 transition-colors">
+                                        <input type="radio" name="ear" value="Sim" class="w-4 h-4 text-fedex-purple focus:ring-fedex-purple">
+                                        <span class="ml-3 text-sm font-semibold text-slate-800">Sim, possuo EAR ativa</span>
+                                    </label>
+                                    <label class="flex items-center p-3.5 rounded-xl border border-slate-300 cursor-pointer hover:bg-fedex-purpleLight/40 transition-colors">
+                                        <input type="radio" name="ear" value="Não" class="w-4 h-4 text-fedex-purple focus:ring-fedex-purple">
+                                        <span class="ml-3 text-sm font-semibold text-slate-800">Não possuo no momento</span>
+                                    </label>
+                                </div>
+                                <p id="ear-error" class="hidden text-xs text-red-600 mt-1 font-medium">Por favor, selecione uma opção sobre o EAR.</p>
+                            </div>
+
+                            <!-- Experiência Prévia -->
+                            <div class="sm:col-span-2">
+                                <label for="experiencia" class="block text-sm font-bold text-slate-700 mb-1.5">
+                                    Experiência prévia como entregador ou motorista <span class="text-slate-400 font-normal">(Opcional)</span>
+                                </label>
+                                <textarea id="experiencia" name="experiencia" rows="3" 
+                                          placeholder="Conte brevemente sobre suas experiências anteriores com entregas, transportadoras, aplicativos ou direção profissional..."
+                                          class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-fedex-purple focus:ring-2 focus:ring-fedex-purple/20 outline-none transition-all text-slate-800"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Botão Enviar Candidatura -->
+                        <div class="pt-2">
+                            <button type="submit" 
+                                    class="w-full py-4 px-6 rounded-xl bg-fedex-orange hover:bg-fedex-orangeHover text-white font-extrabold text-base sm:text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200 flex items-center justify-center">
+                                <i data-lucide="send" class="w-5 h-5 mr-2.5"></i>
+                                <span>Enviar Candidatura</span>
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- ==================== MENSAGEM DE CONFIRMAÇÃO VISUAL ==================== -->
+                    <div id="confirmation-box" class="hidden text-center py-6 space-y-5">
+                        <div class="w-20 h-20 rounded-full bg-green-100 text-green-600 flex items-center justify-center mx-auto shadow-inner">
+                            <i data-lucide="check-circle" class="w-11 h-11"></i>
+                        </div>
+                        <div class="space-y-2">
+                            <span class="inline-block px-3 py-1 rounded-full bg-green-100 text-green-700 text-xs font-bold uppercase tracking-wider">
+                                Protocolo #<span id="protocol-number">FDX-2026</span>
+                            </span>
+                            <h3 class="text-2xl sm:text-3xl font-extrabold text-fedex-purple">
+                                Candidatura Enviada com Sucesso!
+                            </h3>
+                            <p class="text-slate-600 max-w-lg mx-auto text-sm sm:text-base">
+                                Olá, <strong id="confirm-name" class="text-slate-900">Candidato</strong>! Recebemos seus dados para a vaga de <strong>Entregador / Motorista de Entrega</strong> em <strong id="confirm-city" class="text-slate-900">sua região</strong>.
+                            </p>
+                        </div>
+
+                        <!-- Resumo da Submissão -->
+                        <div class="max-w-md mx-auto bg-fedex-grayBg rounded-2xl p-5 border border-slate-200 text-left text-sm space-y-2">
+                            <div class="flex justify-between">
+                                <span class="text-slate-500">E-mail de contato:</span>
+                                <span id="confirm-email" class="font-semibold text-slate-800"></span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-slate-500">WhatsApp:</span>
+                                <span id="confirm-phone" class="font-semibold text-slate-800"></span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-slate-500">CNH / EAR:</span>
+                                <span id="confirm-cnh" class="font-semibold text-slate-800"></span>
+                            </div>
+                        </div>
+
+                        <div class="pt-3">
+                            <button type="button" id="reset-form-btn" 
+                                    class="inline-flex items-center px-6 py-3 rounded-xl bg-fedex-purple hover:bg-fedex-purpleDark text-white font-bold text-sm transition-colors">
+                                <i data-lucide="rotate-ccw" class="w-4 h-4 mr-2"></i>
+                                Realizar Nova Candidatura
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== RODAPÉ ==================== -->
+    <footer class="bg-slate-900 text-slate-300 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800">
+                <!-- Logo no Rodapé -->
+                <div class="flex items-center">
+                    <span class="text-3xl font-black tracking-tighter">
+                        <span class="text-white">Fed</span><span class="text-fedex-orange">Ex</span>
+                    </span>
+                    <span class="ml-3 pl-3 border-l border-slate-700 text-xs font-semibold uppercase tracking-wider text-slate-400">
+                        Carreiras Brasil
+                    </span>
+                </div>
+
+                <!-- Links Rápidos -->
+                <div class="flex flex-wrap justify-center gap-6 text-sm text-slate-400">
+                    <a href="#sobre" class="hover:text-white transition-colors">Sobre a Vaga</a>
+                    <a href="#requisitos" class="hover:text-white transition-colors">Requisitos</a>
+                    <a href="#beneficios" class="hover:text-white transition-colors">Benefícios</a>
+                    <a href="#candidatura" class="hover:text-white transition-colors">Formulário</a>
+                </div>
+            </div>
+
+            <!-- Aviso Informativo de Portfólio / GitHub Pages -->
+            <div class="pt-8 text-center space-y-3">
+                <div class="inline-flex items-center px-4 py-2 rounded-xl bg-slate-800/80 border border-slate-700 text-xs sm:text-sm text-amber-300/90">
+                    <i data-lucide="info" class="w-4 h-4 mr-2 shrink-0 text-fedex-orange"></i>
+                    <span>
+                        <strong>Aviso Informativo:</strong> Esta é uma página demonstrativa de recrutamento desenvolvida exclusivamente para fins de estudo e portfólio no <strong>GitHub Pages</strong>. Não possui vínculo oficial com a FedEx Corporation.
+                    </span>
+                </div>
+                <p class="text-xs text-slate-500">
+                    &copy; <span id="current-year"></span> Projeto Demonstrativo Carreiras FedEx Brasil. Todos os direitos reservados aos seus respectivos detentores de marca.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== JAVASCRIPT DE INTERATIVIDADE E VALIDAÇÃO ==================== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Inicializa os ícones Lucide
+            lucide.createIcons();
+
+            // Atualiza ano atual no rodapé
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+
+            // Referências aos elementos do DOM
+            const form = document.getElementById('application-form');
+            const confirmationBox = document.getElementById('confirmation-box');
+            const formAlert = document.getElementById('form-alert');
+            const resetFormBtn = document.getElementById('reset-form-btn');
+            const telefoneInput = document.getElementById('telefone');
+
+            // Máscara automática para Telefone/WhatsApp brasileiro (XX) XXXXX-XXXX
+            telefoneInput.addEventListener('input', (e) => {
+                let value = e.target.value.replace(/\D/g, '');
+                if (value.length > 11) value = value.slice(0, 11);
+
+                if (value.length > 7) {
+                    value = value.replace(/^(\d{2})(\d{5})(\d{0,4}).*/, '($1) $2-$3');
+                } else if (value.length > 2) {
+                    value = value.replace(/^(\d{2})(\d{0,5})/, '($1) $2');
+                } else if (value.length > 0) {
+                    value = value.replace(/^(\d*)/, '($1');
+                }
+                e.target.value = value;
+            });
+
+            // Função auxiliar para exibir/ocultar erro em campos individuais
+            function setFieldError(inputEl, hasError) {
+                const errorText = inputEl.parentElement.querySelector('.error-msg');
+                if (hasError) {
+                    inputEl.classList.add('border-red-500', 'bg-red-50/30');
+                    inputEl.classList.remove('border-slate-300');
+                    if (errorText) errorText.classList.remove('hidden');
+                } else {
+                    inputEl.classList.remove('border-red-500', 'bg-red-50/30');
+                    inputEl.classList.add('border-slate-300');
+                    if (errorText) errorText.classList.add('hidden');
+                }
+            }
+
+            // Validação do formulário no evento submit
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                let isValid = true;
+
+                // 1. Validação do Nome Completo (mínimo 2 palavras)
+                const nomeInput = document.getElementById('nome');
+                const nomeVal = nomeInput.value.trim();
+                if (nomeVal.length < 5 || !nomeVal.includes(' ')) {
+                    setFieldError(nomeInput, true);
+                    isValid = false;
+                } else {
+                    setFieldError(nomeInput, false);
+                }
+
+                // 2. Validação do E-mail
+                const emailInput = document.getElementById('email');
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(emailInput.value.trim())) {
+                    setFieldError(emailInput, true);
+                    isValid = false;
+                } else {
+                    setFieldError(emailInput, false);
+                }
+
+                // 3. Validação do Telefone (mínimo 10 dígitos numéricos)
+                const phoneDigits = telefoneInput.value.replace(/\D/g, '');
+                if (phoneDigits.length < 10) {
+                    setFieldError(telefoneInput, true);
+                    isValid = false;
+                } else {
+                    setFieldError(telefoneInput, false);
+                }
+
+                // 4. Validação da Cidade / Estado
+                const cidadeInput = document.getElementById('cidade');
+                if (cidadeInput.value.trim().length < 3) {
+                    setFieldError(cidadeInput, true);
+                    isValid = false;
+                } else {
+                    setFieldError(cidadeInput, false);
+                }
+
+                // 5. Validação da Categoria CNH
+                const cnhInput = document.getElementById('cnh');
+                if (!cnhInput.value) {
+                    setFieldError(cnhInput, true);
+                    isValid = false;
+                } else {
+                    setFieldError(cnhInput, false);
+                }
+
+                // 6. Validação do Radio EAR
+                const earSelected = document.querySelector('input[name="ear"]:checked');
+                const earError = document.getElementById('ear-error');
+                if (!earSelected) {
+                    earError.classList.remove('hidden');
+                    isValid = false;
+                } else {
+                    earError.classList.add('hidden');
+                }
+
+                // Verifica resultado final da validação
+                if (!isValid) {
+                    formAlert.classList.remove('hidden');
+                    formAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    return;
+                }
+
+                // Oculta alerta de erro caso estivesse visível
+                formAlert.classList.add('hidden');
+
+                // Gera número de protocolo aleatório
+                const randomProtocol = 'FDX-' + Math.floor(100000 + Math.random() * 900000);
+
+                // Preenche os dados na tela de confirmação
+                document.getElementById('protocol-number').textContent = randomProtocol;
+                document.getElementById('confirm-name').textContent = nomeVal;
+                document.getElementById('confirm-city').textContent = cidadeInput.value.trim();
+                document.getElementById('confirm-email').textContent = emailInput.value.trim();
+                document.getElementById('confirm-phone').textContent = telefoneInput.value.trim();
+                document.getElementById('confirm-cnh').textContent = `Cat. ${cnhInput.value} (EAR: ${earSelected.value})`;
+
+                // Alterna visualização do formulário para a confirmação
+                form.classList.add('hidden');
+                confirmationBox.classList.remove('hidden');
+                confirmationBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            });
+
+            // Botão para resetar o formulário e permitir nova candidatura
+            resetFormBtn.addEventListener('click', () => {
+                form.reset();
+                confirmationBox.classList.add('hidden');
+                form.classList.remove('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
